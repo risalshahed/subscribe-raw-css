@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Footer</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		.footer {
+			background-color: #000030;
+			color: #fff;
+			padding: 5rem 60px;
+		}
+
+		.section-div-footer {
+			display: flex;
+			width: 100%;
+		}
+
+		.logo, .social {
+			width: 30%;
+		}
+
+		.logo {
+			padding-right: 3rem;
+		}
+
+		.office, .link {
+			width: 20%;
+			padding-right: 12px;
+		}
+
+		ul {
+			list-style-type: none;
+			padding: 0;
+		}
+
+		li {
+			padding-bottom: 5px;
+		}
+
+		#home {
+			color: #ff8844;
+		}
+
+		.officeDiv {
+			margin-bottom: 5px;
+		}
+
+		.social-img {
+			display: flex;
+		}
+
+		.social-img-items {
+			padding-right: 15px;
+		}
+
+		@media screen and (max-width: 1024px) {
+			.office {
+				padding-right: 30px;
+			}
+		}
+
+		@media screen and (max-width: 768px) {
+			.footer {
+				padding: 5rem 30px;
+			}
+
+			.office {
+				padding-right: 30px;
+			}
+
+			.logo, .link {
+				padding-right: 20px;
+			}
+		}
+
+		@media screen and (max-width: 640px) {
+			.footer {
+				padding: 5rem 10px;
+			}
+
+			.logo, .office {
+				padding-right: 20px;
+			}
+
+			.link {
+				padding-right: 10px;
+			}
+		}
+
+		@media screen and (max-width: 480px) {
+			.section-div-footer {
+				flex-direction: column;
+
+			}
+			.logo, .office, .link, .social {
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+
+			.header {
+				margin-bottom: 0;
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<section class="footer">
+		<div class="section-div-footer">
+			<div class="logo">
+				<h1 class = "header">
+					Logo
+				</h1>
+				<p>
+					Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. Sem, lacus sit    non pulvinar donec mi augue.
+				</p>
+			</div>
+
+			<div class="office">
+				<h1 class = "header">
+					Office
+				</h1>
+				<p>
+					<div class="officeDiv">London - 887 17th</div>
+					<div class="officeDiv">Street, Office 478</div>
+					<div class="officeDiv">vienna, AU 92101</div>
+				</p>
+					<p>info@gmail.com</p>
+			</div>
+
+			<div class="link">
+				<h1 class = "header">
+					Links
+				</h1>
+				<ul>
+					<li id="home">Home</li>
+					<li>About</li>
+					<li>Event</li>
+					<li>Contacts</li>
+				</ul>
+			</div>
+
+			<div class="social">
+				<h1>
+					Socials
+				</h1>
+				<div class="social-img">
+					<div><img class="social-img-items" src="fb.png"></div>
+					<div><img class="social-img-items" src="twitter.png"></div>
+					<div><img class="social-img-items" src="msg.png"></div>
+					<div><img class="social-img-items" src="insta.png"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

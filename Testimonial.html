@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Testimonial</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		.testimonial {
+			background-color: #f8f8f8;
+			padding-bottom: 5rem;
+		}
+		
+		.header-testimonial {
+			display: flex;
+			justify-content: center;
+			font-size: 130%;
+		}
+
+		.description {
+			margin: 10px 0 4rem;
+			text-align: center;
+			font-size: 130%;
+		}
+
+		.head-pic-testimonial {
+			height: 25px;
+			margin-top: 2rem;
+			margin-left: 8px;
+		}
+
+		.threeDim-pic {
+			position: relative;
+		}
+
+		.clients {
+			display: flex;
+			justify-content: center;
+			margin: 0 4rem;
+		}
+
+		.client-child {
+			background-color: #fff;
+			margin: 0 1rem;
+			padding: 2px 8px;
+		}
+
+		#imgbg-testimonial {
+			position: relative;
+			z-index: 1;
+		}
+		#imgfg1-testimonial {
+			position: absolute;
+			top: 0;
+			padding: 18px;
+			z-index: 2;
+		}
+		#imgfg2-testimonial {
+			position: absolute;
+			top: 0;
+			z-index: 2;
+		}
+
+		.client-comment {
+			margin: 10px 0;
+			font-size: 110%;
+		}
+
+		.client-intro {
+			display: flex;
+		}
+
+		h4 {
+			margin: 5px 0;
+		}
+
+		#duration {
+			margin: 5px 0;
+		}
+
+		@media screen and (max-width: 1024px) {
+			.clients {
+				margin: 0 3rem;
+			}
+
+			.client-child {
+				margin: 0 12px;
+			}
+		}
+
+		@media screen and (max-width: 768px) {
+			.clients {
+				margin: 0 2rem;
+			}
+
+			.client-child {
+				margin: 0 8px;
+			}
+		}
+
+		@media screen and (max-width: 640px) {
+			.clients {
+				flex-direction: column;
+				margin: 0 2rem;
+			}
+
+			.client-child {
+				margin: 1rem 0;
+			}
+		}
+
+		@media screen and (max-width: 480px) {
+			.clients {
+				flex-direction: column;
+				margin: 0 2rem;
+			}
+
+			.client-child {
+				margin: 1rem 0;
+			}
+		}
+
+		@media screen and (max-width: 360px) {
+			.clients {
+				flex-direction: column;
+				margin: 0 1rem;
+			}
+
+			.client-child {
+				margin: 1rem 0;
+			}
+		}
+
+	</style>
+</head>
+
+<body>
+	<section class="testimonial">
+		<div class="header-testimonial">
+			<h1>
+			What Clients Say
+			</h1>
+			<div>
+				<img class="head-pic-testimonial" src="image.png">
+			</div>
+		</div>
+
+		<div class="description">
+			<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit
+			</p>
+		</div>
+
+		<div class="clients">
+			<div class="client-child">
+				<div class="threeDim-pic">
+					<div>
+						<img id="imgbg-testimonial" src="testimonial-bg.png">
+					</div>
+					<div>
+						<img id="imgfg1-testimonial" src="testimonial-fg.png">
+					</div>
+				</div>
+
+				<div class="client-comment">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada cursus conse quat enim sed eget lobortis purus.
+				</div>
+
+				<div class="client-intro">
+					<div>
+						<div class="threeDim-pic">
+							<img id="imgfg2-testimonial" src="jd.png">	
+						</div>
+						<div>
+							<img id="imgbg-testimonial" src="jd-bg.png">
+						</div>
+					</div>
+
+					<div>
+						<h4>
+							John Doe
+						</h4>
+						<p id="duration">
+							One year with us
+						</p>
+					</div>
+				</div>					
+			</div>
+
+			<div class="client-child">
+				<div class="threeDim-pic">
+					<div>
+						<img id="imgbg-testimonial" src="testimonial-bg.png">
+					</div>
+					<div>
+						<img id="imgfg1-testimonial" src="testimonial-fg.png">
+					</div>
+				</div>
+
+				<div class="client-comment">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada cursus conse quat enim sed eget lobortis purus.
+				</div>
+
+				<div class="client-intro">
+					<div>
+						<div class="threeDim-pic">
+							<img id="imgfg2-testimonial" src="td.png">	
+						</div>
+						<div>
+							<img id="imgbg-testimonial" src="td-bg.png">
+						</div>
+					</div>
+
+					<div>
+						<h4>
+							Tiana Dokidis
+						</h4>
+						<p id="duration">
+							One year with us
+						</p>
+					</div>
+				</div>					
+			</div>
+
+			<div class="client-child">
+				<div class="threeDim-pic">
+					<div>
+						<img id="imgbg-testimonial" src="testimonial-bg.png">
+					</div>
+					<div>
+						<img id="imgfg1-testimonial" src="testimonial-fg.png">
+					</div>
+				</div>
+
+				<div class="client-comment">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada cursus conse quat enim sed eget lobortis purus.
+				</div>
+
+				<div class="client-intro">
+					<div>
+						<div class="threeDim-pic">
+							<img id="imgfg2-testimonial" src="j3.png">	
+						</div>
+						<div>
+							<img id="imgbg-testimonial" src="jd-bg.png">
+						</div>
+					</div>
+
+					<div>
+						<h4>
+							John Doe
+						</h4>
+						<p id="duration">
+							One year with us
+						</p>
+					</div>
+				</div>					
+			</div>
+		</div>
+	</section>
+</body>
+</html>

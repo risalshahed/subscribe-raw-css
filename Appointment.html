@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Appointment</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		.appointment {
+			background-color: #f8f8f8;
+			padding-bottom: 5rem;
+		}
+		
+		.header-appointment {
+			display: flex;
+			justify-content: center;
+			font-size: 130%;
+		}
+
+		.description {
+			margin: 10px 0 4rem;
+			text-align: center;
+			font-size: 130%;
+		}
+
+		.head-pic-appointment {
+			height: 25px;
+			margin-top: 2rem;
+			margin-left: 8px;
+		}
+
+		.appointment-form {
+			background-color: #fff;
+			margin: 1rem 4rem;
+		}
+
+		.form-row {
+			display: flex;
+			padding: 15px 20px;
+		}
+
+		.form-row-child {
+			width: 100%;
+			margin: 0 20px;
+		}
+
+		#label {
+			font-size: 120%;
+			margin-left: 2px;
+		}
+
+		.inputForm {
+			width: 100%;
+			padding: 15px 5px;
+			margin-top: 3px;
+			border: 1px solid #000;
+			border-radius: 12px;
+		}
+
+		textarea {
+			width: 100%;
+			padding: 15px 5px;
+			margin-top: 3px;
+			border: 1px solid #000;
+			border-radius: 12px;
+		}
+
+		.submit-div-appointment {
+			display: flex;
+			justify-content: center;
+		}
+
+		.submit-appointment {
+			margin: 20px 0 3rem;
+			background-color: #ff3333;
+			color: #fff;
+			border: 1px solid #ff3333;
+			border-radius: 24px;
+			padding: 15px 25px;
+			cursor: pointer;
+		}
+
+		@media screen and (max-width: 768px) {
+			.form-row {
+				flex-direction: column;
+				padding: 0 25px 0 5px;
+			}
+
+			.form-row-child {
+				margin: 10px 10px 10px 5px;
+			}
+
+		}
+
+		@media screen and (max-width: 640px) {
+			.appointment-form {
+				margin: 1rem 2rem;
+			}
+
+			.form-row {
+				flex-direction: column;
+				padding: 0 25px 0 5px;
+			}
+
+			.form-row-child {
+				margin: 10px 10px 10px 5px;
+			}
+		}
+
+		@media screen and (max-width: 480px) {
+			.header-appointment {
+				font-size: 100%;
+			}
+
+			.head-pic-appointment {
+				margin-top: 22px;
+			}
+
+			.appointment-form {
+				margin: 1rem 1rem;
+			}
+
+			.form-row {
+				flex-direction: column;
+				padding: 0 25px 0 5px;
+			}
+
+			.form-row-child {
+				margin: 10px 10px 10px 5px;
+			}
+		}
+
+		@media screen and (max-width: 360px) {
+			.header-appointment {
+				font-size: 90%;
+			}
+
+			.head-pic-appointment {
+				margin-top: 20px;
+			}
+
+			.appointment-form {
+				margin: 1rem 5px;
+			}
+
+			.form-row {
+				flex-direction: column;
+				padding: 0 25px 0 5px;
+			}
+
+			.form-row-child {
+				margin: 10px 10px 10px 5px;
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<section class="appointment">
+		<div>
+			<div class="header-appointment">
+				<h1>
+					Make an appointment
+				</h1>
+				<div>
+					<img class="head-pic-appointment" src="image.png">
+				</div>
+			</div>
+			<div class="description">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio neque pharetra sed arcu magna quam.
+				</p>
+			</div>
+			
+
+			<div class="appointment-form">
+				<form>
+					<div class="form-row">
+						<div class = "form-row-child">
+							<label id="label" for="name">Full Name</label><br>
+							<input class="inputForm" id="name" type="text" value="" placeholder="Enter your name">
+						</div>
+
+						<div class = "form-row-child">
+							<label id="label" class = "label-even" for="date">Date</label><br>
+							<input class="inputForm" id="date" type="text" value="" placeholder="Enter today's date">
+						</div>
+					</div>
+
+					<div class="form-row">
+						<div class = "form-row-child">
+							<label id="label" for="email">Email address</label><br>
+							<input class="inputForm" id="email" type="email" value="" placeholder="Enter your email id">
+						</div>
+
+						<div class = "form-row-child">
+							<label id="label" class = "label-even" for="time">Time</label><br>
+							<input class="inputForm" id="time" type="text" value="" placeholder="Enter ongoing time">
+						</div>
+					</div>
+
+					<div class="form-row">
+						<div class = "form-row-child">
+							<label id="label" for="phone">Phone Number</label><br>
+							<input class="inputForm" id="phone" type="text" value="" placeholder="Enter your contact number">
+						</div>
+
+						<div class = "form-row-child">
+							<label id="label" class = "label-even" for="sender">Sender</label><br>
+							<input class="inputForm" id="sender" type="text" value="" placeholder="How do you know about us">
+						</div>
+					</div>
+
+					<div class="form-row">
+						<div class="form-row-child">
+							<label id="label" for="msg">Details</label><br>
+							<textarea rows="3" type="text" id="msg" value="" placeholder="Write something about you"></textarea>
+						</div>
+					</div>
+
+					<div class="submit-div-appointment">
+						<input class="submit-appointment" type="submit" value="Send your request">
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

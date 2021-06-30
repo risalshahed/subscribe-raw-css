@@ -4,27 +4,22 @@
 	<title>Subscribe Section</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
-		section > div {
+		.section-div-subscribe {
 			display: flex;
 			justify-content: center;
 		}
 
-		section >> div {
-			display: flex;
-			flex-direction: column;			
-		}
-
-		.header {
+		.header-subscribe {
 			display: flex;
 			justify-content: center;
 			font-size: 130%;
 		}
 
-		.description {
+		.description-subscribe {
 			margin: 5rem 0;
 		}
 
-		.email, .subscribe {
+		.email, .submit-subscribe {
 			border: 2px solid red;
 			border-radius: 15px;
 			padding: 10px;
@@ -34,17 +29,18 @@
 			width: 90%;
 		}
 
-		.subscribe {
+		.submit-subscribe {
 			background-color: red;
 			color: white;
 			margin-left: -88px;
+			cursor: pointer;
 		}
 
-		.div1 {
+		.div1-subscribe {
 			margin: 2rem;
 		}
 
-		.div2 {
+		.div2-subscribe {
 			margin: 2rem;
 		}
 
@@ -53,30 +49,33 @@
 			top: 80px;
 			left: -10px;
 		}
-		#imgbg {
+		#imgbg-subscribe {
 			position: relative;
 		}
-		#imgfg {
+		#imgfg-subscribe {
 			position: absolute;
 			top: 0;
 		}
 
-		.head-pic {
-			height: 20px;
+		.head-pic-subscribe {
+			height: 25px;
 			margin-top: 2rem;
 			margin-left: 8px;
 		}
 
-		h1 {
+		.threeDim-pic {
+			position: relative;
+		}
+
+		.h1-subscribe {
 			text-align: center;
 		}
 
-		p {
+		#para-subscribe {
 			font-size: 120%;
-			/*text-align: center;*/
 		}
 
-		@media screen and (max-width: 780px) and (min-width: 685px) {
+		@media screen and (max-width: 768px) {
 			#imgbg, #imgfg {
 				width: 260px;
 			}
@@ -85,30 +84,25 @@
 				top: 55px;
 				left: -25px;
 			}
-		}
+		}		
 
-		@media screen and (max-width: 685px) and (min-width: 615px) {
-			#imgbg, #imgfg {
-				width: 190px;
-			}
-
-			#imgpink {
-				top: 35px;
-				left: -25px;
-			}
-		}
-
-		@media screen and (max-width: 615px) {
-			section > div {
+		@media screen and (max-width: 640px) {
+			.section-div-subscribe {
 				flex-direction: column;
 			}
 
-			.description {
+			.description-subscribe {
 				margin: 5px 0 3rem;
 			}
 		}
 
-		@media screen and (max-width: 360px) and (min-width: 240px) {
+		@media screen and (max-width: 480px) {
+			.h1-sub {
+				font-size: 90%;
+			}
+			.head-pic-subscribe {
+				margin-top: 1rem;
+			}
 			.divForm {
 				width: 120%;
 			}
@@ -117,50 +111,41 @@
 			}
 		}
 
-		@media screen and (max-width: 239px) {
-			.email {
-				width: 75%;
-			}
-			.subscribe {
-				width: 50%;
-			}
-		}
-
 	</style>
 </head>
 <body>
 	<section>
-		<div>
-			<div class="div1">
-				<div class="header">
-					<h1>
-					Subscribe me
+		<div class="section-div-subscribe">
+			<div class="div1-subscribe">
+				<div class="header-subscribe">
+					<h1 class="h1-subscribe">
+						Subscribe me
 					</h1>
 					<div>
-						<img class="head-pic" src="showCase/image.png">
+						<img class="head-pic-subscribe" src="showCase/image.png">
 					</div>
 				</div>
-				<div class="description">
-					<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit
+				<div class="description-subscribe">
+					<p id = "para-subscribe">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit
 					</p>
 				</div>
 				<div class="divForm">
 					<form>
 						<input class="email" type="email" value="" placeholder="Your email">
-						<input class="subscribe" type="submit" value="Subscribe">
+						<input class="submit-subscribe" type="submit" value="Subscribe">
 					</form>
 				</div>			
 			</div>
 
-			<div class="div2">
-				<div class="3d-pic" style="position: relative;">
+			<div class="div2-subscribe">
+				<div class="threeDim-pic">
 					<div>
 						<img id="imgpink" src="sub-pink.png">
-						<img id="imgbg" src="subscribe-bg.png">
+						<img id="imgbg-subscribe" src="subscribe-bg.png">
 					</div>
 					<div>
-						<img id="imgfg" src="subscribe-fg.png">
+						<img id="imgfg-subscribe" src="subscribe-fg.png">
 					</div>
 				</div>
 				<br><br><br>
